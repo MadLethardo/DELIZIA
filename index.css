@@ -284,4 +284,53 @@ img
         column-gap: 4rem;
     }
 }
+
+/*=============== HOME SECTION ===============*/
+ .home__container
+ {
+    padding-block: 2.5rem;
+    row-gap: 3rem;
+ }
+
+ .home__data
+ {
+    position: relative;
+    text-align: center;
+ }
+
+ .home__title
+ {
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1rem;
+ }
+
+ .home__title span
+ {
+    display: block;
+    color: var(--first-color);
+ }
+
+ .home__description
+ {
+    margin-bottom: 2rem;
+ }
+
  
+
+ /*=============== BUTTON ===============*/
+ .button
+ {
+   display: inline-flex;
+   background-color: var(--first-color);
+   color: var(--title-color);
+   font-weight: var(--font-semi-bold);
+   padding: 1rem 2rem;
+   border-radius: 4rem;
+   transition: background-color .4s, box-shadow .4s;
+ }
+
+ .button:hover
+ {
+    background-color: var(--first-color-alt);
+    box-shadow: 0 4px 24px hsla(350, 70%, 65%, .5);
+ }
