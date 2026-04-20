@@ -29,3 +29,27 @@ const linkAction = () => {
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+/*=============== HOME SWIPER ===============*/
+const swiperHome = new Swiper('.swiper', {
+  loop: true,
+  grabCursor: true,
+  speed: 800,
+  effect: 'creative',
+  creativeEffect: {
+    prev: {
+        translate: ['-120%', 0, -500],
+        rotate: [0, 0, -90],
+        opacity: 0,
+    },
+    next: {
+        translate: ['120%', 0, -500],
+        rotate: [0, 0, 90],
+        opacity: 0,
+    },
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
