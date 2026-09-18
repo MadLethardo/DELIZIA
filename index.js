@@ -77,4 +77,3 @@ const swiperProducts = new Swiper('.product__content', {
         swiper: swiperTabs,
     }
 })
-
