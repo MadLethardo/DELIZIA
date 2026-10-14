@@ -70,6 +70,9 @@
 html
 {
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(350, 40%, 65%)
+                     hsl(350, 40%, 75%);
 }
 
 body, input, button 
@@ -367,7 +370,6 @@ img
  .home__cake
  {
     position: absolute;
-    /* bottom: clamp(305px, 28vh, 155px); */
     left: 50%;
     bottom: 160px;
     transform: translateX(-50%);
@@ -668,7 +670,11 @@ img
  .product .swiper
  {
     overflow: initial;
-    /* border: 10px solid black; */
+ }
+
+ .product__content.swiper
+ {
+    overflow: hidden;
  }
 
  .product__tabs .swiper-wrapper
@@ -888,21 +894,6 @@ img
     font-style: normal;
 }
 
-/* .contact__title
-{
-    color: var(--first-color);
-    font-size: var(--h3-font-size);
-    margin-bottom: .5rem;
-}
-
-.contact__address, .contact__numbers
-{
-    display: block;
-    color: var(--white-color);
-    font-style: normal;
-    margin-bottom: .50rem;
-} */
-
 .contact__social
 {
     display: flex;
@@ -1029,6 +1020,11 @@ img
     background-color: hsl(350, 40%, 75%);
 }
 
+::-webkit-scrollbar-track
+{
+    background-color: hsl(350, 40%, 75%);
+}
+
 ::-webkit-scrollbar-thumb
 {
     background-color: hsl(350, 40%, 65%);
@@ -1042,7 +1038,7 @@ img
 /*=============== SCROLL UP ===============*/
 .scrollup
 {
-    postion: fixed;
+    position: fixed;
     right: 1rem;
     bottom: -50%;
     background-color: var(--body-color);
@@ -1085,6 +1081,19 @@ img
 
 }
 
+@media (min-width: 360px) and (max-width: 540px)
+{
+    .home__slice-2
+    {
+        right: 2rem;
+    }
+
+    .product__cards
+    {
+        margin-top: 0.5rem;
+    }
+}
+
 /* For medium devices. */
 @media (min-width: 540px)
 {
@@ -1100,16 +1109,18 @@ img
     {
         grid-template-columns: 350px;
         justify-content: center;
+        margin-top: 0.5rem;
     }
 
     .button
     {
-          margin-bottom: 2rem;
+        margin-bottom: 2rem;
     }
 
     .footer__blob
     {
-        width: 500px;
+        width: 100%;
+        bottom: -2rem;
     }
 }
 
@@ -1118,12 +1129,13 @@ img
     .product__cards
     {
         grid-template-columns: repeat(2, 350px);
+        gap: 1.5rem
     }
 
     .footer__blob
     {
-        width: 800px;
-        bottom: -3rem;
+        width: 100%;
+        bottom: -5rem;
     }
 }
 
@@ -1363,7 +1375,7 @@ img
 
     .product__content.swiper
     {
-        width: 1150px;
+        width: 100%;
         padding-block: 3rem;
         overflow: hidden;
     }
@@ -1495,7 +1507,7 @@ img
     {
         grid-template-columns: repeat(2, max-content);
         justify-content: initial;
-        gap: 4rem 6rem;
+        gap: 4rem 5rem;
     }
 
     .contact__info
@@ -1516,8 +1528,8 @@ img
 
     .contact__sticker-1
     {
-       right: -2rem;
-       top: -4rem; 
+       right: 0.5rem;
+       top: -3rem; 
     }
 
     .contact__sticker-2
@@ -1563,8 +1575,8 @@ img
 
     .footer__blob
     {
-       width: 100%;
-       bottom: -6rem; 
+        width: 100%;
+        bottom: -6rem; 
     }
 
     .footer__leaf-1

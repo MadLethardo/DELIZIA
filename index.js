@@ -129,7 +129,7 @@ const scrollActive = () => {
     //We get the position by scrolling down
     const scrollY = window.scrollY
 
-    sections.foreach(section => {
+    sections.forEach( section => {
         const id = section.id, //id of each section
               top = section.offsetTop - 50, //Distance from the top edge
               height = section.offsetHeight, //Element Height

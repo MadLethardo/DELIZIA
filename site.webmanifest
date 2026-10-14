@@ -1,0 +1,28 @@
+{
+  "name": "Delizia | Custom Cakes Bakery | Fresh Handmade Cakes for Every Occasion.",
+  "short_name": "Delizia",
+  "description": "Artisan cakes, cupcakes and sweet moments.",
+  "theme_color": "#5B3528",
+  "background_color": "#FFF4E8",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./RESOURCES/IMAGES/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./RESOURCES/IMAGES/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./RESOURCES/IMAGES/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
